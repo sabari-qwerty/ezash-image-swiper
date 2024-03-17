@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ezash</title>
+    <title>Document</title>
 
     <style>
         * {
@@ -66,41 +66,91 @@
         .framer-n0ccwk {
             display: none;
         }
+
+
+        .loderScreen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .image-container {
+            width: 500px;
+            height: 500px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     </style>
 </head>
 
 <body>
-    <iframe src="https://violet-task-455078.framer.app/"></iframe>
+    <div class="container-iframe" style="width: 100%; height: 100%;">
+
+        <iframe src="https://violet-task-455078.framer.app/"></iframe>
+    </div>
     <div class="small-box">
 
         <div class="card">
-            <a href="mailto:ezash00@gmail.com" target="_blank" style="background: #000;">
+            <a href="mailto:ezash00@gmail.com" style="background: #000;">
 
                 <img src="https://sabari-qwerty.github.io/image-hosting/social/mail.png" alt="conteact" />
             </a>
         </div>
         <div class="card">
-            <a href="https://www.linkedin.com/in/ezash00/" target="_blank">
+            <a href="https://www.linkedin.com/in/ezash00/">
 
                 <img src="https://sabari-qwerty.github.io/image-hosting/social/in.png" alt="conteact" />
             </a>
 
         </div>
         <div class="card">
-            <a href="https://www.instagram.com/ezash_/" target="_blank">
+            <a href="https://www.instagram.com/ezash_/">
 
                 <img src="https://sabari-qwerty.github.io/image-hosting/social/insta.png" alt="conteact" />
             </a>
 
         </div>
         <div class="card">
-            <a href="https://discord.com/users/870982408210624522" target="_blank">
+            <a href="https://discord.com/users/870982408210624522">
 
                 <img src="https://sabari-qwerty.github.io/image-hosting/social/discprd.png" alt="conteact" />
             </a>
 
         </div>
     </div>
+
+    <div class="loderScreen">
+        <div class="image-container">
+
+            <img src="https://sabari-qwerty.github.io/image-hosting/gif/BEE_GIF.gif" alt="gif" />
+        </div>
+    </div>
+
+
+
+    <script>
+        const myTimeout = setTimeout(myGreeting, 20000);
+
+        function myGreeting() {
+
+            document.querySelector(".loderScreen").classList.add("none")
+
+        }
+    </script>
 </body>
 
 </html>
